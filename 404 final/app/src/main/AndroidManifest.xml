@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/ic_trash_logo_app"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_trash_logo_app"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.QuizAndHistoryDashboard" >
+        <activity
+            android:name=".cleanup11"
+            android:exported="false" />
+        <activity
+            android:name=".cleanup10"
+            android:exported="false" />
+        <activity
+            android:name=".cleanup9"
+            android:exported="false" />
+        <activity
+            android:name=".cleanup8"
+            android:exported="false" />
+        <activity
+            android:name=".cleanup7"
+            android:exported="false" />
+        <activity
+            android:name=".cleanup6"
+            android:exported="false" />
+        <activity
+            android:name=".cleanup5"
+            android:exported="false" />
+        <activity
+            android:name=".cleanup4"
+            android:exported="false" />
+        <activity
+            android:name=".cleanup3"
+            android:exported="false" />
+        <activity
+            android:name=".cleanup2"
+            android:exported="false" />
+        <activity
+            android:name=".cleanup1"
+            android:exported="false" />
+        <activity
+            android:name=".EcoLegend"
+            android:exported="false" />
+        <activity
+            android:name=".EcoChampion"
+            android:exported="false" />
+        <activity
+            android:name=".EcoHelper"
+            android:exported="false" />
+        <activity
+            android:name=".EcoStarter"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".Leaderboard"
+            android:exported="false" />
+        <activity
+            android:name=".Cleanup"
+            android:exported="false" />
+        <activity
+            android:name=".Badges"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpGoogle"
+            android:exported="false" />
+        <activity
+            android:name=".QuizandGames"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpFB"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".climatecomplete"
+            android:exported="false" />
+        <activity
+            android:name=".climateanswers"
+            android:exported="false"
+            android:theme="@style/AppButton.BlackText" />
+        <activity
+            android:name=".climatequestions"
+            android:exported="false"
+            android:theme="@style/AppButton.BlackText" />
+        <activity
+            android:name=".ClimateQuizActivity"
+            android:exported="false" />
+        <activity
+            android:name=".naturecomplete"
+            android:exported="false" />
+        <activity
+            android:name=".natureanswers"
+            android:exported="false"
+            android:theme="@style/AppButton.BlackText" />
+        <activity
+            android:name=".naturequestions"
+            android:exported="false"
+            android:theme="@style/AppButton.BlackText" />
+        <activity
+            android:name=".histcomplete"
+            android:exported="false" />
+        <activity
+            android:name=".histquestions"
+            android:exported="false"
+            android:theme="@style/AppButton.BlackText" />
+        <activity
+            android:name=".historyanswers"
+            android:exported="false"
+            android:theme="@style/AppButton.BlackText" /> <!-- Register other activities -->
+        <activity android:name=".HistoryQuizActivity" />
+        <activity android:name=".NatureQuizActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.TrashNotFound" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme colors -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+    </style>
+
+    <!-- Corrected Theme.QuizAndHistoryDashboard -->
+    <style name="Theme.QuizAndHistoryDashboard" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Default button style to have white text -->
+
+        <!-- Standard theme colors -->
+        <item name="colorPrimary">@color/purple_500</item> <!-- Assuming @color/purple_500 is defined -->
+        <item name="colorOnPrimary">@color/white</item>     <!-- Assuming @color/white is defined -->
+        <!-- You might want to define other specific theme attributes here if needed -->
+    </style>
+
+    <!-- Custom Button Style for White Text -->
+    <style name="AppButton.BlackText" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:textColor">@color/black</item> <!-- Assuming @color/white is defined -->
+    </style>
+
+    <!-- Styles for BottomNavigationView item text -->
+    <style name="BottomNav.Active" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="BottomNav.Inactive" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+</resources>

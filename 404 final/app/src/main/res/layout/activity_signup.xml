@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="@color/white">
+
+    <!-- Green Header Background Only -->
+    <View
+        android:id="@+id/header"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="@color/cleanupGreen"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Logo -->
+
+    <!-- App Title -->
+
+    <!-- Create Account Title -->
+
+    <!-- Instruction Text -->
+
+    <ImageView
+        android:id="@+id/logoIcon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:contentDescription="Trash logo"
+        android:src="@drawable/ic_trash_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.137" />
+
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="384dp"
+        android:layout_height="55dp"
+        android:backgroundTint="@color/black"
+        android:text="Continue"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/header"
+        app:layout_constraintVertical_bias="0.578" />
+
+    <EditText
+        android:id="@+id/emailField"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext_background"
+        android:hint="email@domain.com"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:textSize="14sp"
+        android:textColorHint="#828282"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.411" />
+
+    <Button
+        android:id="@+id/buttonfb"
+        android:layout_width="361dp"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent"
+        android:elevation="0dp"
+        android:stateListAnimator="@null"
+        app:backgroundTint="@android:color/transparent"
+        app:elevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/header"
+        app:layout_constraintVertical_bias="0.741" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue with Facebook"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonfb"
+        app:layout_constraintEnd_toEndOf="@+id/buttonfb"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/buttonfb"
+        app:layout_constraintTop_toTopOf="@+id/buttonfb"
+        app:layout_constraintVertical_bias="0.58" />
+
+    <Button
+        android:id="@+id/buttongoogle"
+        android:layout_width="361dp"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent"
+        android:elevation="0dp"
+        android:stateListAnimator="@null"
+        app:backgroundTint="@android:color/transparent"
+        app:elevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/header"
+        app:layout_constraintVertical_bias="0.664" />
+
+    <TextView
+        android:id="@+id/createAccountTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create an account"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.266" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue with Google"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/buttongoogle"
+        app:layout_constraintEnd_toEndOf="@+id/buttongoogle"
+        app:layout_constraintStart_toStartOf="@+id/buttongoogle"
+        app:layout_constraintTop_toTopOf="@+id/buttongoogle"
+        app:layout_constraintVertical_bias="0.58" />
+
+    <EditText
+        android:id="@+id/passwordField"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext_background"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textSize="14sp"
+        android:textColorHint="#828282"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.485" />
+
+    <TextView
+        android:id="@+id/instructionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your email to sign up for this app"
+        android:textColor="@color/gray"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.336" />
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="404 Trash Not Found"
+        android:textColor="@color/cleanupGreen"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.213" />
+
+    <!-- Email Field -->
+
+    <!-- Password Field -->
+
+    <!-- Continue Button -->
+
+    <!-- Google Sign-In -->
+
+    <!-- Facebook Sign-In -->
+
+    <!-- Disclaimer -->
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="31dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonfb"
+        app:layout_constraintEnd_toEndOf="@+id/buttonfb"
+        app:layout_constraintHorizontal_bias="0.227"
+        app:layout_constraintStart_toStartOf="@+id/buttonfb"
+        app:layout_constraintTop_toTopOf="@+id/buttonfb"
+        app:layout_constraintVertical_bias="0.0"
+        android:contentDescription="Facebook logo"
+        android:src="@drawable/ic_facebook" />
+
+    <TextView
+        android:id="@+id/disclaimerText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="By clicking continue, you agree to our Terms of Service and Privacy Policy."
+        android:textAlignment="center"
+        android:textColor="@color/gray"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.934" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="21dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttongoogle"
+        app:layout_constraintEnd_toEndOf="@+id/buttongoogle"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="@+id/buttongoogle"
+        app:layout_constraintTop_toTopOf="@+id/buttongoogle"
+        app:layout_constraintVertical_bias="0.3"
+        android:contentDescription="Google Logo"
+        android:src="@drawable/ic_google" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

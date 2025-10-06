@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <!-- Cleanup Activity Image -->
+
+    <!-- Badge Title -->
+
+    <!-- Badge Description -->
+
+    <ImageView
+        android:id="@+id/cleanupImage"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@drawable/image_rounded"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_clean4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/badgeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="EcoLegend 💥"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cleanupImage" />
+
+    <TextView
+        android:id="@+id/badgeDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Joined 20+ cleanup drives and inspired others to join."
+        android:textSize="13sp"
+        android:textColor="@color/gray"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintTop_toBottomOf="@id/badgeTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Badge Details Header -->
+    <TextView
+        android:id="@+id/badgeDetailsHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Badge Details"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintTop_toBottomOf="@id/badgeDescription"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Badge Details Content -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/badgeDetailsContent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintTop_toBottomOf="@id/badgeDetailsHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/labelPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Points Awarded:"
+            android:textSize="13sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/valuePoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:textSize="13sp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/labelPoints" />
+
+        <TextView
+            android:id="@+id/labelCleanups"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Required Cleanups:"
+            android:textSize="13sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/labelPoints" />
+
+        <TextView
+            android:id="@+id/valueCleanups"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20+"
+            android:textSize="13sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/valuePoints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Users Header -->
+    <TextView
+        android:id="@+id/usersHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Users Who Earned This Badge"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintTop_toBottomOf="@id/badgeDetailsContent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Search Box -->
+    <FrameLayout
+        android:id="@+id/searchContainer"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/search_background"
+        app:layout_constraintTop_toBottomOf="@id/usersHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/searchIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical|start"
+            android:layout_marginStart="16dp"
+            android:contentDescription="Search icon"
+            android:src="@drawable/ic_search" />
+
+        <TextView
+            android:id="@+id/searchLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="48dp"
+            android:text="Search"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </FrameLayout>
+
+    <!-- User Profile Card -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/userCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintTop_toBottomOf="@id/searchContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Avatar with PNG -->
+        <ImageView
+            android:id="@+id/userAvatar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_avatar"
+            android:scaleType="centerInside"
+            android:contentDescription="User avatar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Points -->
+        <TextView
+            android:id="@+id/userPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Points"
+            android:textColor="@color/cleanupGreen"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            app:layout_constraintStart_toEndOf="@id/userAvatar"
+            app:layout_constraintTop_toTopOf="@id/userAvatar" />
+
+        <!-- Username -->
+        <TextView
+            android:id="@+id/usernameDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toEndOf="@id/userAvatar"
+            app:layout_constraintTop_toBottomOf="@id/userPoints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/backbutton"
+        android:layout_width="27dp"
+        android:layout_height="31dp"
+        android:background="@drawable/bakk"
+        android:shadowColor="#000000"
+        android:shadowRadius="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.018"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cleanupImage"
+        app:layout_constraintVertical_bias="0.009" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

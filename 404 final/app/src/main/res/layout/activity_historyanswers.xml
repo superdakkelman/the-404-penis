@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HistoryQuizActivity">
+
+    <ImageView
+        android:id="@+id/histquizbimage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/socrates"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter"
+        android:shadowColor="#000000"
+        android:shadowRadius="2"
+        android:text="5 Questions"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.078" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter"
+        android:shadowColor="#000000"
+        android:shadowRadius="2"
+        android:text="HISTORY QUIZ"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <Button
+        android:id="@+id/exitbuttonhq"
+        android:layout_width="152dp"
+        android:layout_height="40dp"
+        android:background="@drawable/roundedrect"
+        android:fontFamily="@font/inter"
+        android:text="Exit"
+        android:textColor="#4D4D4D"
+        app:layout_constraintBottom_toBottomOf="@+id/histquizbimage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <Button
+        android:id="@+id/nextbuttonhq"
+        android:layout_width="152dp"
+        android:layout_height="40dp"
+        android:background="@drawable/roundedrect"
+        android:fontFamily="@font/inter"
+        android:text="Next"
+        android:textColor="#4D4D4D"
+        app:layout_constraintBottom_toBottomOf="@+id/histquizbimage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+    <TextView
+        android:id="@+id/question_background"
+        android:layout_width="344dp"
+        android:layout_height="354dp"
+        android:alpha=".8"
+        android:background="@drawable/roundedrectq"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.307" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter"
+        android:text="Question 1/5"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/question_background"
+        app:layout_constraintEnd_toEndOf="@+id/question_background"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="@+id/question_background"
+        app:layout_constraintTop_toTopOf="@+id/question_background"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="305dp"
+        android:layout_height="51dp"
+        android:fontFamily="@font/inter"
+        android:text="Who was the first emperor of the Roman \Empire?"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/question_background"
+        app:layout_constraintEnd_toEndOf="@+id/question_background"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="@+id/question_background"
+        app:layout_constraintTop_toTopOf="@+id/question_background"
+        app:layout_constraintVertical_bias="0.174" />
+    <Button
+        android:id="@+id/hqanswer1"
+        android:layout_width="298dp"
+        android:layout_height="42dp"
+        android:background="@drawable/roundedrectqcorrect"
+        android:elevation="100dp"
+        android:text="Julius Caesar"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@+id/question_background"
+        app:layout_constraintEnd_toEndOf="@+id/question_background"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="@+id/question_background"
+        app:layout_constraintTop_toTopOf="@+id/question_background"
+        app:layout_constraintVertical_bias="0.419" />
+
+    <Button
+        android:id="@+id/hqanswer2"
+        android:layout_width="298dp"
+        android:layout_height="42dp"
+        android:background="@drawable/roundedrectqwrong"
+        android:elevation="100dp"
+        android:text="Nero"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@+id/question_background"
+        app:layout_constraintEnd_toEndOf="@+id/question_background"
+        app:layout_constraintStart_toStartOf="@+id/question_background"
+        app:layout_constraintTop_toTopOf="@+id/question_background"
+        app:layout_constraintVertical_bias="0.583" />
+
+    <Button
+        android:id="@+id/hqanswer3"
+        android:layout_width="298dp"
+        android:layout_height="42dp"
+        android:background="@drawable/roundedrectqwrong"
+        android:elevation="100dp"
+        android:text="Marcus Aurelius"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@+id/question_background"
+        app:layout_constraintEnd_toEndOf="@+id/question_background"
+        app:layout_constraintStart_toStartOf="@+id/question_background"
+        app:layout_constraintTop_toTopOf="@+id/question_background"
+        app:layout_constraintVertical_bias="0.759" />
+
+    <Button
+        android:id="@+id/hqanswer4"
+        android:layout_width="298dp"
+        android:layout_height="42dp"
+        android:background="@drawable/roundedrectqwrong"
+        android:elevation="100dp"
+        android:text="Caligula"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@+id/question_background"
+        app:layout_constraintEnd_toEndOf="@+id/question_background"
+        app:layout_constraintStart_toStartOf="@+id/question_background"
+        app:layout_constraintTop_toTopOf="@+id/question_background"
+        app:layout_constraintVertical_bias="0.939" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

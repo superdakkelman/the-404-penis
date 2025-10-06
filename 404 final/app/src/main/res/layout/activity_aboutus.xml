@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!-- Header with Back Button -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/about_header"
+                    android:scaleType="centerCrop" />
+
+                <ImageButton
+                    android:id="@+id/backButton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_back_button"
+                    android:layout_alignParentStart="true"
+                    android:layout_margin="12dp" />
+            </RelativeLayout>
+
+            <!-- Text Content -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="ABOUT US"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="“Cleaning Baguio, One Drive at a Time”"
+                android:textStyle="italic"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/black"
+                android:gravity="center" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:src="@drawable/about_img1"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Our app empowers the residents of Baguio City to actively participate in cleanup drives across various barangays. With points and badges, we make environmental responsibility both fun and rewarding."
+                android:layout_marginTop="8dp"
+                android:justificationMode="inter_word"
+                android:layout_margin="18dp"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:src="@drawable/about_img2"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Our platform fosters community engagement and encourages continuous action to keep Baguio clean, green, and sustainable one drive at a time."
+                android:layout_marginTop="8dp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:layout_margin="18dp"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:src="@drawable/about_img3"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="12dp" />
+
+            <!-- Mission and Vision Centered -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mission"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/black"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Our mission is to inspire and unite the people of Baguio in creating a cleaner, healthier environment. We provide a platform where community members can easily join cleanup drives, track their impact, and earn rewards for their efforts. Through gamification, we foster a sense of shared responsibility, helping build a stronger, environmentally-conscious community in Baguio."
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:layout_margin="18dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vision"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/black"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="We envision a Baguio City where every resident actively contributes to maintaining the city's beauty and sustainability. Through continuous involvement in local cleanup drives, we aim to create a vibrant, waste-free community where environmental responsibility is celebrated, and the impact is felt for generations to come."
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:layout_margin="18dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Green Bar -->
+    <View
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/cleanupGreen" />
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_badges"
+        android:icon="@drawable/ic_badges_logo"
+        android:title="Badges"/>  <!-- ADD TITLE -->
+    <item
+        android:id="@+id/nav_leaderboard"
+        android:icon="@drawable/ic_leaderboard_logo"
+        android:title="Leaderboard"/> <!-- ADD TITLE -->
+    <item
+        android:id="@+id/nav_cleanup"
+        android:icon="@drawable/ic_cleanup_logo"
+        android:title="Cleanup"/> <!-- ADD TITLE -->
+    <item
+        android:id="@+id/nav_button_quizandgames"
+        android:icon="@drawable/ic_activities_logo"
+        android:title="Activities"/> <!-- ADD TITLE -->
+</menu>

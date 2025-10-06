@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    tools:context=".MainActivity">
+
+    <!-- HEADER -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/greenbackground">
+        <TextView
+            android:id="@+id/dashboardName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="sans-serif-black"
+            android:text="ACTIVITIES"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+        
+    </RelativeLayout>
+
+    <!-- SCROLLABLE CONTENT -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center_horizontal">
+
+            <!-- PROGRESS CARD -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="123dp"
+                    android:background="@drawable/darkgreenbox"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/adlam"
+                        android:text="TODAY'S PROGRESS"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/adlam"
+                            android:text="Games Played: 0/3"
+                            android:textColor="@android:color/white"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/adlam"
+                            android:text="Quizzes Done: 0/3"
+                            android:textColor="@android:color/white"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- GAMES SECTION -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="GAMES"
+                android:fontFamily="@font/adlam"
+                android:textColor="#3C8750"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <!-- QUIZZES SECTION -->
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="354dp"
+                android:layout_height="114dp"
+                android:src="@drawable/gameicons" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QUIZ ACTIVITIES"
+                android:fontFamily="@font/adlam"
+                android:textColor="#3C8750"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_marginTop="24dp" />
+
+            <Button
+                android:id="@+id/btnHistoryQuiz"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="8dp"
+                android:shadowColor="#000000"
+                android:shadowRadius="4"
+                android:background="@drawable/roundrecthistq"
+                android:text="HISTORY QUIZ"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:fontFamily="@font/adlam"
+                android:gravity="center" />
+
+            <!-- DAILIES SECTION -->
+
+            <Button
+                android:id="@+id/btnNatureQuiz"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/roundrectnatureq"
+                android:fontFamily="@font/adlam"
+                android:gravity="center"
+                android:shadowColor="#000000"
+                android:shadowRadius="4"
+                android:textColor="#FFFFFF"
+                android:text="NATURE QUIZ"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnClimateQuiz"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/roundrectclimateq"
+                android:gravity="center"
+                android:fontFamily="@font/adlam"
+                android:shadowColor="#000000"
+                android:shadowRadius="4"
+                android:textColor="#FFFFFF"
+                android:text="CLIMATE QUIZ"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DAILIES"
+                android:fontFamily="@font/adlam"
+                android:textColor="#3C8750"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_marginTop="24dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#0E3915"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <CheckBox
+                        android:id="@+id/checkBoxPlayGames"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Play three games"
+                        android:fontFamily="@font/adlam"
+                        android:shadowColor="#000000"
+                        android:shadowRadius="4"
+                        android:buttonTint="#FFFFFF"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxFinishQuizzes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:buttonTint="#FFFFFF"
+                        android:text="Finish quizzes"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/adlam"
+                        android:shadowColor="#000000"
+                        android:shadowRadius="4"
+                        android:textColor="#FFFFFF" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxPerfectScores"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:buttonTint="#FFFFFF"
+                        android:text="Achieve perfect scores"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/adlam"
+                        android:shadowColor="#000000"
+                        android:shadowRadius="4"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        app:itemIconTint="@color/nav_item_black_tint"
+        app:itemTextColor="@color/nav_item_black_tint"
+        app:itemTextAppearanceActive="@style/BottomNav.Active"
+        app:itemTextAppearanceInactive="@style/BottomNav.Inactive"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav_menu" />
+
+</LinearLayout>
