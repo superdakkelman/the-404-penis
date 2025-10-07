@@ -2,27 +2,41 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white">
 
-    <!-- Green Header -->
+    <!-- This ImageView sits behind the header and provides the background picture. -->
+    <!-- It is constrained to the header's dimensions. -->
+    <ImageView
+        android:id="@+id/headerBackgroundImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cleanupdrive_headerpic"
+        app:layout_constraintBottom_toBottomOf="@+id/header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <!-- This is your original header, but with a translucent background. -->
+    <!-- The green color now overlays the ImageView behind it. -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="160dp"
-        android:background="@color/cleanupGreen"
+        android:background="@color/cleanupGreenTranslucent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <!-- Menu Icon -->
-
-        <!-- Page Title -->
+        <!-- Title -->
         <TextView
             android:id="@+id/headerTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
-            android:text="Cleanup Drives"
+            android:text="Cleanup Badges"
             android:textColor="@android:color/white"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -58,12 +72,11 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="48dp"
-                android:text="Search"
+                android:text="Search Barangay"
                 android:textColor="@color/black"
                 android:textSize="14sp" />
         </FrameLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
-
     <!-- Scrollable Cleanup Drives List -->
     <ScrollView
         android:id="@+id/scrollContent"
