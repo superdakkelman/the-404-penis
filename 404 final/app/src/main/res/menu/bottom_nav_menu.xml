@@ -10,7 +10,7 @@
         android:title="Leaderboard"/> <!-- ADD TITLE -->
     <item
         android:id="@+id/nav_cleanup"
-        android:icon="@drawable/ic_cleanup_logo"
+        android:icon="@drawable/outline_cleaning"
         android:title="Cleanup"/> <!-- ADD TITLE -->
     <item
         android:id="@+id/nav_button_quizandgames"
